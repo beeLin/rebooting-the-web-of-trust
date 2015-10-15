@@ -1,0 +1,53 @@
+= Blockchain-based Trust for the Web of Code
+Sean Gilligan <https://github.com/msgilligan>
+v0.1
+:description: Rough draft of topic paper for Rebooting Web of Trust.
+
+== Zooko stalks the Bazaar
+
+A computing device cannot be secure if an attacker is able to surreptitiously insert malignant code on it. Current solutions for signing and verifying computer software -- both source code and binaries -- generally rely on the same flawed, hierarchal systems as our network connections do.
+
+Blockchain technology allows us to sidestep Zooko's Triangle and provide systems of identification that are decentralized, secure, and human-meaningful. Today's dominant code signing and verification technologies rely on centralized certificate authorities and/or centralized hardware or operating system vendors. These solutions are typically designed around end-user installation and do not address the needs of software developers who increasingly rely on externally developed components in both source and binary form. Open Source Software has moved us in the direction of the Bazaar and created an incredibly powerful and diverse supply chain, but has brought with it new risks.
+
+Language-specific software component repositories such as Maven, NPM, RubyGems, and CocoaPods are not as secure as they should be and yet most developers have no alternative but to assume their component downloads have not been tampered with. In the rare circumstances where developers are validating their downloading components they're using homegrown components and often manually verifying SHA hashes. Typically the SHA hashes are stored on the same server as the file to be validated, so if the download is compromised, the hash will also be compromised. Developers need a way of sending and receiving decentralized, secure, and human meaningful information that can be used to secure software components and applications.
+
+For years the default option for the leading Java responsitory, Maven Central, was to use http rather than https. In 2014 an exploit was demonstrated that used a MITM attack to insert unwanted code into any downloaded JAR file. Shortly thereafter https became the default option. However, there are still no reliable, automated methods for ensuring that files weren't corrupted on the Maven Central servers themselves.
+
+== Blockchain-based ID Systems can help
+
+As blockchain-based identity solutions are becoming increasingly viable and are in search of early adopters, they can be applied to the software development process itself.
+
+Namecoin is (one of?) the first blockchain-based identity solutions and currently provides enough functionality to solve the major issues involved in software distribution. Blockchain-agnostic middleware like DNSChain can provide servers and APIs for integrating with software build tools to provide the decentralized identity and other functions that are needed. Developing tools that are blockchain-agnostic will reassure tool developers that they can migrate to another blockchain based upon future adoption and technology trends.
+
+One area of concern is what is called "blockchain bloat", but it is unclear whether file signatures would be stored on a blockchain and, if so, how many would really need to be store. There has been preliminary discussion within the Namecoin community about blockchain-based signing/hashing of file contents although simply using a blockchain user id or domain id may be enough to significantly improve some of the current pain points. 
+
+== Proposed directions
+
+We propose discussing these issues at the conference and unless presented with more attractive options, proceed with developing a working prototype for the Java ecosystem that uses Namecoin and DNSChain. Why Java? It is large, it generally distributes binaries rather than sources, it is clearly in need of solution, and (this author) knows it best.
+
+== Issues
+
+TBD
+
+== Conclusion 
+
+TBD
+
+== References
+
+TBD: Exact titles and links, etc.
+
+[1] Zooko: http://web.archive.org/web/20011020191610/http://zooko.com/distnames.html
+
+[2] ESR: The Cathedral and the Bazaar
+
+[3] Links to all the language specific repos and information about their validation mechanisms.
+
+[4] Maven repo hack blog entry
+
+[5] JBaruch blog articles on signing and identity
+
+[6] existing solutoins
+
+[7] Issues for langauages and plaforms other than Java
+
