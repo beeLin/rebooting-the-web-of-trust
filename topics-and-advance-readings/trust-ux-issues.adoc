@@ -1,0 +1,16 @@
+= The Threat Model
+Genevieve Primavera <https://github.com/genevievePrima>
+v0.1
+:description: Rough draft of topic paper for Rebooting Web of Trust.
+
+The biggest security issue facing Internet users is their own lack of awareness that they even need it in the first place. And if they do have this awareness, many and most don’t even know where to start. So what we have is the larger population of people accepting their lack of security and privacy in order to continue to communicate, take part in commerce, and thrive in the modern world. This chosen mantra of “ignorance is bliss,” further puts the common user in the dark when it comes to security, until she becomes a victim of it, and it’s too late.
+
+The thing is that most people want to be more secure, they just don’t know how, without knowing the complex infrastructure of what goes on behind the scenes, how man in the middle attacks happen, how censorship takes place, and how they may be being spied on. At the end of the day though, none of us really know. Can we trust SSL certificates? The answer is sometimes, but in many cases that certification comes from China. Not even Google and Firefox trust China’ certification, and Google is censored in China, and Google infiltrates our privacy everyday, as well.
+
+Another common threat is the use of JavaScript. Now we all know how much we depend on JavaScript, not just for cool animated experiences, but it also provides much of the basic functionality we need when on the web. However, the use of JavaScript contains a vulnerability for spyware. Most people don’t know this. Most people use sites for their everyday activities that depend on JavaScript.
+
+Until there is a reliable way to live in the virtual world we know as the Internet, there needs to be equal attention paid to how we communicate to the user just how secure or insecure she is using the web, her email, her messaging system, her online bank account, and so forth. There is currently little out there in the way of UX to communicate this to the user. I mean, really. What exactly do the little lock icons mean? What is green versus gray? They don’t really tell us much except that we are safe, as far as certification goes. But what are we safe from? What is the threat? And here lies the problem.
+
+We must first define the threat model, representative of a way that the common user understands and relates, in real-time, in an interactive manner. This way, the user can easily identify the “sharks” before being attacked by taking informed action. Furthermore, by defining the threats, we are giving the user assurance that she is using the browser securely, privately and censorship free, or not.
+
+This live interactive definition should be easy to see and access, yet still remain nonintrusive to the user’s experience, creating a platform where the user can surf freely, knowing with certainty that their experience is free from censorship, surveillance and crackers. 
