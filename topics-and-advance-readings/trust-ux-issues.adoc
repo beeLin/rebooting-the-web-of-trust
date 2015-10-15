@@ -1,16 +1,41 @@
-= The Threat Model
+= UX Issues in Communicating Threats and Countermeasures
 Genevieve Primavera <https://github.com/genevievePrima>
 v0.1
 :description: Rough draft of topic paper for Rebooting Web of Trust.
 
-The biggest security issue facing Internet users is their own lack of awareness that they even need it in the first place. And if they do have this awareness, many and most don’t even know where to start. So what we have is the larger population of people accepting their lack of security and privacy in order to continue to communicate, take part in commerce, and thrive in the modern world. This chosen mantra of “ignorance is bliss,” further puts the common user in the dark when it comes to security, until she becomes a victim of it, and it’s too late.
+by Genevieve Primavera https://github.com/genevievePrima[@genevievePrima] and Sean Gilligan https://github.com/msgilligan[@msgilligan]
 
-The thing is that most people want to be more secure, they just don’t know how, without knowing the complex infrastructure of what goes on behind the scenes, how man in the middle attacks happen, how censorship takes place, and how they may be being spied on. At the end of the day though, none of us really know. Can we trust SSL certificates? The answer is sometimes, but in many cases that certification comes from China. Not even Google and Firefox trust China’ certification, and Google is censored in China, and Google infiltrates our privacy everyday, as well.
+== UX Issues
 
-Another common threat is the use of JavaScript. Now we all know how much we depend on JavaScript, not just for cool animated experiences, but it also provides much of the basic functionality we need when on the web. However, the use of JavaScript contains a vulnerability for spyware. Most people don’t know this. Most people use sites for their everyday activities that depend on JavaScript.
+The biggest security issue facing Internet users is often a lack of awareness of the threats they face. Even when users do have this awareness, many don't know where to start. The result is a large population of people accepting their lack of security and privacy in order to continue to communicate, take part in commerce, and thrive in the modern world. This chosen mantra of "ignorance is bliss" keeps the common user in the dark when it comes to security, until she becomes a victim of it, and it's too late.
 
-Until there is a reliable way to live in the virtual world we know as the Internet, there needs to be equal attention paid to how we communicate to the user just how secure or insecure she is using the web, her email, her messaging system, her online bank account, and so forth. There is currently little out there in the way of UX to communicate this to the user. I mean, really. What exactly do the little lock icons mean? What is green versus gray? They don’t really tell us much except that we are safe, as far as certification goes. But what are we safe from? What is the threat? And here lies the problem.
+Most people want to be more secure, but without knowledge of the complex infrastructure behind the scenes -- how censors can block content, how man in the middle attacks occur, and how surveillance technology is used against them -- they can't even begin to consider what countermeasures might be available to them.
 
-We must first define the threat model, representative of a way that the common user understands and relates, in real-time, in an interactive manner. This way, the user can easily identify the “sharks” before being attacked by taking informed action. Furthermore, by defining the threats, we are giving the user assurance that she is using the browser securely, privately and censorship free, or not.
+Until we have software with built-in, strong, and reliable privacy and security, we need to communicate to the user an indication of how secure or insecure her web access, her email, her messaging system, and other internet applications are. The current user experience for security and encryption is either non-existant or when present is confusing and inconsistent. For example, most browsers provide lock icons and some indication of the purported quality of the SSL certificate, but the UX is poorly understood by users, inconsistent between different browsers and somemetimes inconsistent between different versions of the same browsers. Advanced users may be aware of the difference between `http://` and `https://` or know that the lock icon means it's safe (or at least _safer_) to enter their credit card number on an ecommerce site. Most are unaware that even with these assurances their privacy is still at risk. Clicking on the icons for additional information results in the display of complex technical information about certificate authorities that very few users will understand.
 
-This live interactive definition should be easy to see and access, yet still remain nonintrusive to the user’s experience, creating a platform where the user can surf freely, knowing with certainty that their experience is free from censorship, surveillance and crackers. 
+Note:: Should we mention e-mail and PGP here?
+
+Security experts study a *threat model*, and end users need to be aware of it, too. Obviously users should not be expected to understand the details, but they should be aware of the basic issues. Leaving aside the security flaws in current technology, there is an additional issue in how poorly the user experience conveys to users the threat model.
+
+Note:: Can we find some published studies or polls about this?
+
+== The Opportunity
+
+Researchers, developers, and activists are now creating a new generation of privacy and security protocols and tools. The creators of this new generation of tools should pay careful attention to User Experience (UX) as they design each layer of the system. If users don't understand the risks they won't appreciate the tools, if the tools aren't easy to use they'll be misused (perhaps dangerously so) or not used at all.
+
+Both offensive and defensive technologies are rapidly changing. Cryptocurrency has created new awareness about the importance of secure storage of private keys, blockchains have opened new possibilities for handling trust and identitity, web-of-trust solutions beyond the original PGP are being devloped. As these new technologies move from prototype to a popular audience there is an opportunity to better convey both the threats and countermeasures to users. If we consider UX from the beginning, we'll not only be able to build better tools we may even build better protocols.
+
+== The Solution
+
+For each new protocol and its applications we should give careful thought to producing the following items:
+
+* Conveying a simplified (but not simplistic) model of the threats users of the new protocol and applications face. Initial communication should be directed at early adopters and the media. In a later phase we'll need to reach a mainstream popular audience. Contrasting the new technology to older solutions will help create interest in the new techology, but we must strive for honest communication of risks that will continue to exist with new technology. This information will need to be conveyed in a variety of media (video, charts and graphics, articles and books)
+
+* Graphical and textual information in a quick reference form that can be standardized between protocols and applications and perhaps contrasted with existing technologies.
+
+* Scorecards for vendors. For example, the security of a web browser depends upon security measures implemented by the remote server. If we cucceed at making the security choices and policies of vendors readily apparent 
+
+* Standardized user interface elements in applications that give real-time indications on the current level of security and privacy. Clicking on these elements for more information will bring the user to summary information that is consistent between applications and with media produced in the above steps.
+
+These steps will help us towards our goal of creating platforms where users can surf freely, knowing with certainty that their experience is free from censorship, surveillance and crackers. 
+
